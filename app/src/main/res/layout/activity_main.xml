@@ -1,16 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:background="#D0B298"
+    android:padding="24dp"
+    tools:context=".MainActivity">
 
+    <!-- Header / Banner Sederhana -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#F6EEE5"
+        android:padding="20dp"
+        android:elevation="4dp"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dashboard Utama"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#DCA718" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih menu atau navigasi di bawah ini"
+            android:textSize="13sp"
+            android:textColor="#DCA718"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <!-- Tombol Menu Pertemuan 4 -->
     <Button
         android:id="@+id/btnPertemuan4"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Pertemuan 4"
-        android:layout_margin="8dp" />
+        android:layout_height="52dp"
+        android:text="Halaman Utaman"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#DEA818"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Tombol Logout -->
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="Logout Akun"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#DC2626" />
 
 </LinearLayout>

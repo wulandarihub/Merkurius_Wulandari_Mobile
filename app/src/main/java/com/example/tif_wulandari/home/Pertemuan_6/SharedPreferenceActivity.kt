@@ -1,4 +1,4 @@
-package com.example.tif_wulandari.Pertemuan_6
+package com.example.tif_wulandari.home.Pertemuan_6
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -36,7 +36,7 @@ class SharedPreferenceActivity : AppCompatActivity() {
         }
 
         // 3. Inisialisasi SharedPreferences (Mode Private)
-        sharedPreferences = getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
+        sharedPreferences = getSharedPreferences(PREF_NAME, MODE_PRIVATE)
 
         // Inisialisasi View dari layout
         val etUsername = findViewById<EditText>(R.id.etUsername)

@@ -1,4 +1,4 @@
-package com.example.tif_wulandari.Pertemuan_6
+package com.example.tif_wulandari.home.Pertemuan_6
 
 import android.content.Context
 import android.content.Intent
@@ -30,7 +30,7 @@ class SplashActivity : AppCompatActivity() {
         }
 
         // 2. Inisialisasi SharedPreferences dengan nama file "UserPref" (mode private)
-        sharedPreferences = getSharedPreferences("UserPref", Context.MODE_PRIVATE)
+        sharedPreferences = getSharedPreferences("UserPref", MODE_PRIVATE)
 
         // 3. Memberikan jeda waktu (delay 3000 ms = 3 detik) menggunakan Handler
         Handler(Looper.getMainLooper()).postDelayed({

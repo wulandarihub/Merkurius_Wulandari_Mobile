@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#021D64"
-    tools:context=".Pertemuan_6.SplashActivity">
+    tools:context=".home.Pertemuan_6.SplashActivity">
 
     <ImageView
         android:id="@+id/ivLogo"

@@ -5,7 +5,8 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import com.example.tif_wulandari.Pertemuan_4.FourthActivity
+import com.example.tif_wulandari.home.Pertemuan_4.FourthActivity
+import com.example.tif_wulandari.home.Pertemuan_7.SevenActivity
 import com.example.tif_wulandari.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -33,6 +34,7 @@ class MainActivity : AppCompatActivity() {
                 .setTitle("Konfirmasi")
                 .setMessage("Apakah Anda yakin ingin logout?")
                 .setPositiveButton("Ya") { dialog, _ ->
+
                     // 1. Hapus data SharedPreferences sesuai instruksi modul
                     val editor = sharedPref.edit()
                     editor.clear()
@@ -49,6 +51,11 @@ class MainActivity : AppCompatActivity() {
                     dialog.dismiss()
                 }
                 .show()
+        }
+
+        binding.btnSeven.setOnClickListener {
+            val intent = Intent(this, SevenActivity::class.java)
+            startActivity(intent)
         }
     }
 }

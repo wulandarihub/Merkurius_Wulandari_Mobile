@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:padding="24dp"
     android:background="#FFFFFF"
-    tools:context=".Pertemuan_6.SharedPreferenceActivity">
+    tools:context=".home.Pertemuan_6.SharedPreferenceActivity">
 
     <TextView
         android:id="@+id/tvTitle"

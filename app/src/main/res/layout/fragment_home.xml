@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".home.HomeFragment">
 
-    <!-- Background atau Toolbar Header kamu tetap di bagian atas -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -22,7 +21,7 @@
         android:id="@+id/tvHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:text="Halaman Home"
         android:textSize="26sp"
         android:textStyle="bold"
@@ -35,18 +34,45 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         app:columnCount="2"
-        app:useDefaultMargins="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvHome">
+        app:layout_constraintTop_toBottomOf="@id/tvHome"
+        app:useDefaultMargins="true">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPertemuan2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Pertemuan 2"
+            app:cornerRadius="8dp"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPertemuan3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Pertemuan 3"
+            app:cornerRadius="8dp"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnPertemuan4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Pertemuan 4"
+            app:cornerRadius="8dp"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPertemuan6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Pertemuan 6"
             app:cornerRadius="8dp"
             app:layout_columnWeight="1"
             app:layout_gravity="fill_horizontal" />
@@ -70,11 +96,12 @@
             app:layout_gravity="fill_horizontal" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnMenuLain"
+            android:id="@+id/btnEleventh"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Menu Lain"
+            android:text="Pertemuan 11"
             app:cornerRadius="8dp"
+            app:layout_columnSpan="2"
             app:layout_columnWeight="1"
             app:layout_gravity="fill_horizontal" />
 
@@ -85,7 +112,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="24dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:text="Logout"
         app:cornerRadius="8dp"
         app:strokeColor="@color/black"

@@ -86,5 +86,8 @@ class SharedPreferenceActivity : AppCompatActivity() {
             tvStatus.text = "Belum ada data tersimpan"
             Toast.makeText(this, "Data berhasil dihapus!", Toast.LENGTH_SHORT).show()
         }
+        findViewById<Button>(R.id.btnBackSharedPref).setOnClickListener {
+            finish()
+        }
     }
 }

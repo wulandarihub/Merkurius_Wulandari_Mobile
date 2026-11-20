@@ -22,16 +22,18 @@ class SecondActivity : AppCompatActivity() {
             insets
         }
 
-        // Inisialisasi komponen
         val inputNama: EditText = findViewById(R.id.inputNama)
         val btnSubmit: Button = findViewById(R.id.btnSubmit)
+        val btnBack: Button = findViewById(R.id.btnBack)
 
         btnSubmit.setOnClickListener {
-            //Mengambil value dari inputNama dan menampilkan di Logcat
-            val nama = inputNama.text
-            Log.e("Klik btnSubmit","Tombol berhasil di tekan. Isi dari inputNama = $nama")
+            val nama = inputNama.text.toString()
+            Log.e("Klik btnSubmit", "Tombol berhasil di tekan. Isi dari inputNama = $nama")
+            Toast.makeText(this, "Halo $nama, data berhasil disubmit!", Toast.LENGTH_SHORT).show()
+        }
 
-            Toast.makeText(this, "Anda telah melakukan klik pada tombol Submit", Toast.LENGTH_SHORT).show()
+        btnBack.setOnClickListener {
+            finish()
         }
     }
 }

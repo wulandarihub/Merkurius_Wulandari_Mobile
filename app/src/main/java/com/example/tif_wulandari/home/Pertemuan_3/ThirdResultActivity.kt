@@ -1,6 +1,8 @@
 package com.example.tif_wulandari.home.Pertemuan_3
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,6 +18,18 @@ class ThirdResultActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        val tvKeterangan: TextView = findViewById(R.id.textView3)
+        val btnBackResult: Button = findViewById(R.id.btnBackThirdResult)
+
+        val nomorDiterima = intent.getStringExtra("EXTRA_NOMOR")
+        if (!nomorDiterima.isNullOrEmpty()) {
+            tvKeterangan.text = "Silahkan Periksa Nomor Anda: $nomorDiterima"
+        }
+
+        btnBackResult.setOnClickListener {
+            finish()
         }
     }
 }

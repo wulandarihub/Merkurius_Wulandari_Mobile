@@ -84,6 +84,8 @@ class MoreFragment : Fragment() {
             val selectedItem = dataListWithDesc[position]
             val title = selectedItem["title"]
             val desc = selectedItem["desc"]
-            Toast.makeText(requireContext(), "Kamu memilih: $title ($desc)", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), "Kamu memilih: $title ($desc)", Toast.LENGTH_SHORT)
+                .show()
+        }
     }
 }

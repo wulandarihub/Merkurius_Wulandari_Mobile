@@ -23,20 +23,28 @@ class ThirdActivity : AppCompatActivity() {
             insets
         }
 
-        // Inisialisasi komponen
-        val inputNama: EditText = findViewById(R.id.inputNama)
-        val btnSubmit: Button = findViewById(R.id.btnSubmit)
+        val inputNoTujuan: EditText = findViewById(R.id.inputNoTujuan)
+        val btnKirim: Button = findViewById(R.id.btnKirim)
+        val btnBack: Button = findViewById(R.id.btnBackThird)
 
-        btnSubmit.setOnClickListener {
+        btnKirim.setOnClickListener {
+            val nomor = inputNoTujuan.text.toString().trim()
+            if (nomor.isEmpty()) {
+                inputNoTujuan.error = "Nomor tujuan wajib diisi"
+                return@setOnClickListener
+            }
 
-            val intent = Intent(this, ThirdResultActivity::class.java)
+            Log.e("Klik btnKirim", "Tombol berhasil ditekan. Isi dari inputNoTujuan = $nomor")
+            Toast.makeText(this, "Kode verifikasi dikirim ke $nomor", Toast.LENGTH_SHORT).show()
+
+            val intent = Intent(this, ThirdResultActivity::class.java).apply {
+                putExtra("EXTRA_NOMOR", nomor)
+            }
             startActivity(intent)
+        }
 
-            //Mengambil value dari inputNama dan menampilkan di Logcat
-            val nama = inputNama.text
-            Log.e("Klik btnSubmit","Tombol berhasil di tekan. Isi dari inputNama = $nama")
-
-            Toast.makeText(this, "Anda telah melakukan klik pada tombol Submit", Toast.LENGTH_SHORT).show()
+        btnBack.setOnClickListener {
+            finish()
         }
     }
 }

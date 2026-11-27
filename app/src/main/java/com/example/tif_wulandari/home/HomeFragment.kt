@@ -13,7 +13,7 @@ import com.example.tif_wulandari.databinding.FragmentHomeBinding
 import com.example.tif_wulandari.home.Pertemuan_11.EleventhActivity
 import com.example.tif_wulandari.home.Pertemuan_2.SecondActivity
 import com.example.tif_wulandari.home.Pertemuan_3.ThirdActivity
-import com.example.tif_wulandari.home.Pertemuan_4.FourthActivity
+//import com.example.tif_wulandari.home.Pertemuan_4.FourthActivity
 import com.example.tif_wulandari.home.Pertemuan_6.SharedPreferenceActivity
 import com.example.tif_wulandari.home.Pertemuan_7.SevenActivity
 import com.example.tif_wulandari.home.pertemuan_10.TenthActivity
@@ -46,10 +46,10 @@ class HomeFragment : Fragment() {
             startActivity(Intent(requireActivity(), ThirdActivity::class.java))
         }
 
-        // Pertemuan 4
-        binding.btnPertemuan4.setOnClickListener {
-            startActivity(Intent(requireActivity(), FourthActivity::class.java))
-        }
+//        // Pertemuan 4
+//        binding.btnPertemuan4.setOnClickListener {
+//            startActivity(Intent(requireActivity(), FourthActivity::class.java))
+//        }
 
         // Pertemuan 6
         binding.btnPertemuan6.setOnClickListener {

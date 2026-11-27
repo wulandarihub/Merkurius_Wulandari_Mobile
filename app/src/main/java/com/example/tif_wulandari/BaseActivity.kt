@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
+import com.example.tif_wulandari.Note.NoteFragment
 import com.example.tif_wulandari.databinding.ActivityBaseBinding
 import com.example.tif_wulandari.home.HomeFragment
 import com.example.tif_wulandari.message.MessageFragment
@@ -42,6 +43,10 @@ class BaseActivity : AppCompatActivity() {
                 }
                 R.id.more -> {
                     replaceFragment(MoreFragment())
+                    true
+                }
+                R.id.note -> {
+                    replaceFragment(NoteFragment())
                     true
                 }
 
